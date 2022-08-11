@@ -3,14 +3,14 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Happy Jekylling! - </title>
+    <title>index - </title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
     <div class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
       <div class="hidden md:grid w-full grid-cols-3 h-24 md:divide-x-2 divide-black divide-solid">
-          <div class="text-4xl pt-6 pl-8 ">Jonas Koeksal</div>
+          <a href="./index.html" class="text-4xl pt-6 pl-8 ">Jonas Koeksal</a>
           <div class="text-2xl col-span-2 text-center p-6">Selected Works(2017-2021)</div>
       </div>
       <div class="flex-1 flex flex-col md:grid md:grid-cols-3 md:divide-x-2 divide-black divide-solid overflow-y-auto">
@@ -365,7 +365,7 @@
             Jonas Koeksal
           </div>
           <div class="md:hidden h-16"></div>
-          <!-- Literaturhaus München (double, one for mobile one for desktop: different visibility and x-data/x-show)-->
+          <!-- Literaturhaus München (double, one for mobile one for desktop: different visibility and x-data/x-show); change content in both!-->
 <div class="md:h-full" x-data x-show="$store.open1">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
@@ -383,7 +383,7 @@
         </div>
     </div>
 </div>
-<div class="md:hidden">
+<button onclick="location.href='./literaturhaus.html'" type="button" class="md:hidden">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
             <div class="text-2xl flex flex-col justify-center">
@@ -399,7 +399,7 @@
             <img class="object-cover w-full h-4/6" src="/assets/images/0_Literaturhaus_München/2_65945.jpg" alt="">
         </div>
     </div>
-</div>
+</button>
 <!-- O Mato (double, one for mobile one for desktop)-->
 <div class="md:h-full" x-data x-show="$store.open2">
     <div class="px-6 py-8 flex flex-col">
@@ -418,7 +418,7 @@
         </div>
     </div>
 </div>
-<div class="md:hidden">
+<button onclick="location.href='./omato.html'" type="button" class="md:hidden">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
             <div class="text-2xl flex flex-col justify-center">
@@ -434,8 +434,8 @@
             <img class="object-cover w-full h-4/6" src="/assets/images/1_O MATO/1.jpg" alt="">
         </div>
     </div>
-</div>
-<!-- Menu 3 -->
+</button>
+<!-- Plotze -->
 <div class="md:h-full" x-data x-show="$store.open3">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
@@ -453,7 +453,7 @@
         </div>
     </div>
 </div>
-<div class="md:hidden">
+<button onclick="location.href='./ploetze.html'" type="button"  class="md:hidden">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
             <div class="text-2xl flex flex-col justify-center">
@@ -469,7 +469,7 @@
             <img class="object-cover w-full h-4/6" src="/assets/images/2_Plötze/3_ID Card PSD Mockup_final.jpg" alt="">
         </div>
     </div>
-</div>
+</button>
 <!-- Desktop landing text -->
 <div class="hidden md:flex md:h-full">
     <div class="text-base text-left py-20 px-48">
