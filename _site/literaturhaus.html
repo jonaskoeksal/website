@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Literaturhaus München - </title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body>
+    <div class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
+      <div class="hidden md:grid w-full grid-cols-3 h-24 md:divide-x-2 divide-black divide-solid">
+          <a href="./index.html" class="text-4xl pt-6 pl-8 ">Jonas Koeksal</a>
+          <div class="text-2xl col-span-2 text-center p-6">Selected Works (2017-2021)</div>
+      </div>
+      <div class="flex-1 flex flex-col md:grid md:grid-cols-3 md:divide-x-2 divide-black divide-solid overflow-y-auto">
+          <div class="hidden md:flex flex-col md:divide-y-2 divide-black divide-solid">
+            <div class="text-2xl lg:text-3xl bg-cgray flex-grow pl-8 pt-10 space-y-2">
+              <div class="" x-data @mouseleave="$store.open1 = false">
+
+                <div @mouseover="$store.open1 = true" x-show="!$store.open1" class="" >
+                  Literaturhaus München
+                </div>
+                <button onclick="location.href='./literaturhaus.html'" type="button" x-show="$store.open1" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Literaturhaus München</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open2 = false">
+                <div @mouseover="$store.open2 = true" x-show="!$store.open2" class="" >
+                  O MATO
+                </div>
+                <button onclick="location.href='./omato.html'" type="button" x-show="$store.open2" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>O MATO</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open3 = false">
+                <div @mouseover="$store.open3 = true" x-show="!$store.open3" class="" >
+                  Plötze
+                </div>
+                <button onclick="location.href='./ploetze.html'" type="button" x-show="$store.open3" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Plötze</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open4 = false">
+                <div @mouseover="$store.open4 = true" x-show="!$store.open4" class="" >
+                  Island Jazz
+                </div>
+                <button onclick="location.href='./islandjazz.html'" type="button" x-show="$store.open4" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Island Jazz</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open5 = false">
+                <div @mouseover="$store.open5 = true" x-show="!$store.open5" class="" >
+                  United We Stream
+                </div>
+                <button onclick="location.href='./unitedwestream.html'" type="button" x-show="$store.open5" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>United We Stream</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open6 = false">
+                <div @mouseover="$store.open6 = true" x-show="!$store.open6" class="" >
+                  Bundesdruckerei Pitch
+                </div>
+                <button onclick="location.href='./bundesdruckereipitch.html'" type="button" x-show="$store.open6" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Bundesdruckerei Pitch</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open7 = false">
+                <div @mouseover="$store.open7 = true" x-show="!$store.open7" class="" >
+                  Sonho do Mato
+                </div>
+                <button onclick="location.href='./sonhodomato.html'" type="button" x-show="$store.open7" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Sonho do Mato</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open8 = false">
+                <div @mouseover="$store.open8 = true" x-show="!$store.open8" class="" >
+                  Various Posters
+                </div>
+                <button onclick="location.href='./variousposters.html'" type="button" x-show="$store.open8" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Various Posters</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open9 = false">
+                <div @mouseover="$store.open9 = true" x-show="!$store.open9" class="" >
+                  Camera Work
+                </div>
+                <button onclick="location.href='./camerawork.html'" type="button" x-show="$store.open9" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Camera Work</span>
+                </button>
+              </div>  
+              <div class="" x-data @mouseleave="$store.open10 = false">
+                <div @mouseover="$store.open10 = true" x-show="!$store.open10" class="" >
+                  Motion Showreel
+                </div>
+                <button onclick="location.href='./motionsowreel.html'" type="button" x-show="$store.open10" class="flex items-center text-white">
+                  <svg class="h-8 px-6" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{clip-path:url(#SVGID_00000003086795726348245710000001032047060009110974_);}
+                      .st1{fill:#FFFFFF;}
+                    </style>
+                    <g>
+                      <defs>
+                        <rect id="SVGID_1_" x="3.92" y="15.25" width="87.08" height="61.6"/>
+                      </defs>
+                      <clipPath id="SVGID_00000004537132935073467390000004040083305534449321_">
+                        <use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+                      </clipPath>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M88.52,48.41H6.4c-1.37,0-2.48-1.11-2.48-2.48c0-1.37,1.11-2.48,2.48-2.48h59.79
+                          C56.32,38.97,47.9,31.01,47.9,17.73c0-1.37,1.11-2.48,2.48-2.48c1.37,0,2.48,1.11,2.48,2.48c0,10.18,5.84,17.59,17.36,22
+                          c9.03,3.46,18.26,3.71,18.35,3.71c1.36,0.03,2.44,1.15,2.43,2.51C90.98,47.31,89.88,48.41,88.52,48.41z"/>
+                      </g>
+                      <g style="clip-path:url(#SVGID_00000004537132935073467390000004040083305534449321_);">
+                        <path class="st1" d="M50.38,76.85c-1.37,0-2.48-1.11-2.48-2.48c0-13.28,8.43-21.24,18.29-25.71H6.4c-1.37,0-2.48-1.11-2.48-2.48
+                          s1.11-2.48,2.48-2.48h82.12c1.36,0,2.47,1.09,2.48,2.45c0.01,1.36-1.07,2.48-2.43,2.51c-0.09,0-9.32,0.25-18.35,3.71
+                          c-11.52,4.42-17.36,11.82-17.36,22C52.86,75.74,51.75,76.85,50.38,76.85z"/>
+                      </g>
+                    </g>
+                  </svg>
+                  <span>Motion Showreel</span>
+                </button>
+              </div>  
+            </div>
+            <div class="flex text-xl justify-evenly">
+                <div class="p-2">
+                  <a href="./impressum.html" class="">Impressum</a>
+                </div>
+                <div class="p-2">
+                  <a href="./about.html" class="">About</a>
+                </div>
+                <div class="p-2">
+                  <a href="./contact.html" class="">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="md:col-span-2 overflow-y-scroll h-auto divide-y-2 divide-black divide-solid md:divide-none">
+          <div class="fixed md:hidden w-full h-16 bg-cgray text-3xl pl-6 flex flex-col justify-center divide-y-2 divide-black divide-solid">
+            Jonas Koeksal
+          </div>
+          <div class="md:hidden h-16"></div>
+          <button onclick="location.href='./index.html'" type="button" class="md:hidden absolute top-6 right-6" style="border-style:none">
+    <svg class="h-6 w-6" style="border-top-width:none;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z"  /></svg>
+</button>
+<div class="flex flex-col space-y-8">
+    <div class="flex-1 w-auto">
+        <img class="object-cover w-full h-4/6" src="/assets/images/0_Literaturhaus_München/1_Intro.jpg" alt="">
+    </div>
+    <div class="flex-grow grid grid-cols-3 grid-rows-2 space-x-4 px-8 lg:space-x-4 xl:px-48 lg:pt-10 text-xs">
+        <div class="span-cols-1 span-rows-2 flex flex-col space-y-4">
+            <div class="text-2xl">
+                Literaturhaus München
+            </div>
+            <div class="grid grid-rows-4">
+                <div class="">Art Direction</div>
+                <div class="">Branding</div>
+                <div class="">Photography</div>
+                <div class="">Motion Design</div>
+            </div>    
+        </div>
+        <div class="col-span-2 row-span-1 lg:col-span-1 lg:row-span-2">Alorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris "
+        </div>
+        <div class="col-span-2 col-start-2 row-span-1 lg:col-span-1 lg:row-span-2">nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+    </div>
+    <div class="w-auto flex-1">
+        <img class="object-cover w-full h-4/6" src="/assets/images/0_Literaturhaus_München/2_65945.jpg" alt="">
+    </div>
+</div>
+        </div>
+      </div>    
+    </div>
+    <script>
+      document.addEventListener('alpine:init', () => {
+        Alpine.store('open1', false);
+        Alpine.store('open2', false);
+        Alpine.store('open3', false);
+        Alpine.store('open4', false);
+        Alpine.store('open5', false);
+        Alpine.store('open6', false);
+        Alpine.store('open7', false);
+        Alpine.store('open8', false);
+        Alpine.store('open9', false);
+        Alpine.store('open10', false);
+      })
+    </script>
+  </body>
+</html>
