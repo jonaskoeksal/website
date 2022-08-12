@@ -3,7 +3,7 @@ layout: default
 title: "Camera Work"
 ---
 
-<div class="inset-0 absolute bg-white bg-opacity-100 min-h-full h-full w-full flex flex-col gallery">
+<div class="inset-0 absolute bg-white bg-opacity-100 min-h-full h-full w-full flex flex-col">
     <!-- slide one (needs extra class "firstslide" as does last slide need "lastslide")-->
   <div class="flex flex-col slide firstslide">
       <div class="py-4 px-6 flex justify-between">
@@ -11,7 +11,7 @@ title: "Camera Work"
               <svg class="h-6 w-6" style="border-top-width:none;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z"  /></svg>
           </button>
           <div class="">personal, 2017</div>
-          <div class="grid grid-cols-2">
+          <div class="grid grid-cols-2 z-50">
               <button onclick="previousSlide()">
                   <svg class="h-7 px-6" style="transform: rotate(180deg);" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
@@ -68,7 +68,7 @@ title: "Camera Work"
               </button>
           </div>
       </div>
-      <div class="grid grid-cols-2 space-x-4 p-12 items-center flex-1">
+      <div class="grid grid-cols-2 space-x-4 p-12 items-center flex-1 content">
           <div class="">
               <img class="object-contain" src="{{site.baseurl}}/wbstjnskksl/assets/images/8_Camera Work/1/14424879_1238058206236161_3663829198413934534_o.jpg" alt="">
           </div>
@@ -141,7 +141,7 @@ title: "Camera Work"
                 </button>
             </div>
         </div>
-        <div class="grid grid-cols-2 space-x-4 p-12 items-center flex-1">
+        <div class="grid grid-cols-2 space-x-4 p-12 items-center flex-1 content">
             <div class="">
                 <img class="object-contain" src="{{site.baseurl}}/wbstjnskksl/assets/images/8_Camera Work/2/00006422.jpg" alt="">
             </div>
@@ -214,7 +214,7 @@ title: "Camera Work"
                     </button>
                 </div>
             </div>
-            <div class="grid grid-cols-2 space-x-4 p-12 items-center flex-1">
+            <div class="grid grid-cols-2 space-x-4 p-12 items-center flex-1 content">
                 <div class="">
                     <img class="object-contain" src="{{site.baseurl}}/wbstjnskksl/assets/images/8_Camera Work/2/00006422.jpg" alt="">
                 </div>
@@ -255,17 +255,23 @@ title: "Camera Work"
         }
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
-  $('.gallery').click(function (e){
+  $('.content').click(function (e){
 
   var elm = $(this);
   var xPos = e.pageX - elm.offset().left;
 
   if((elm.width() / 2) >= xPos){
-    nextSlide();
-  } else {
     previousSlide();
+    }
+   else {
+    if(elm.tagname == 'BUTTON' ){
+      console.log("button")
+      pass
+    }else{
+    nextSlide();
   }
-
+}
 });
 </script>
