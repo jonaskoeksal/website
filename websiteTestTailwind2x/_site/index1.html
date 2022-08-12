@@ -11,12 +11,12 @@
     <div class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
       <div class="hidden md:grid w-full grid-cols-3 h-24 md:divide-x-2 divide-black divide-solid">
           <a href="./index.html" class="text-4xl pt-6 pl-8 ">Jonas Koeksal</a>
-          <div class="text-2xl col-span-2 text-center p-6">Selected Works(2017-2021)</div>
+          <div class="text-2xl col-span-2 text-center p-6">Selected Works (2017-2021)</div>
       </div>
       <div class="flex-1 flex flex-col md:grid md:grid-cols-3 md:divide-x-2 divide-black divide-solid overflow-y-auto">
           <div class="hidden md:flex flex-col md:divide-y-2 divide-black divide-solid">
             <div class="text-2xl lg:text-3xl bg-cgray flex-grow pl-8 pt-10 space-y-2">
-              <div class="" x-data="{ $store.open1: false}" @mouseleave="$store.open1 = false">
+              <div class="" x-data @mouseleave="$store.open1 = false">
 
                 <div @mouseover="$store.open1 = true" x-show="!$store.open1" class="" >
                   Literaturhaus München
@@ -50,7 +50,7 @@
                   <span>Literaturhaus München</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open2: false}" @mouseleave="$store.open2 = false">
+              <div class="" x-data @mouseleave="$store.open2 = false">
                 <div @mouseover="$store.open2 = true" x-show="!$store.open2" class="" >
                   O MATO
                 </div>
@@ -83,7 +83,7 @@
                   <span>O MATO</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open3: false}" @mouseleave="$store.open3 = false">
+              <div class="" x-data @mouseleave="$store.open3 = false">
                 <div @mouseover="$store.open3 = true" x-show="!$store.open3" class="" >
                   Plötze
                 </div>
@@ -116,7 +116,7 @@
                   <span>Plötze</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open4: false}" @mouseleave="$store.open4 = false">
+              <div class="" x-data @mouseleave="$store.open4 = false">
                 <div @mouseover="$store.open4 = true" x-show="!$store.open4" class="" >
                   Island Jazz
                 </div>
@@ -149,7 +149,7 @@
                   <span>Island Jazz</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open5: false}" @mouseleave="$store.open5 = false">
+              <div class="" x-data @mouseleave="$store.open5 = false">
                 <div @mouseover="$store.open5 = true" x-show="!$store.open5" class="" >
                   United We Stream
                 </div>
@@ -182,7 +182,7 @@
                   <span>United We Stream</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open6: false}" @mouseleave="$store.open6 = false">
+              <div class="" x-data @mouseleave="$store.open6 = false">
                 <div @mouseover="$store.open6 = true" x-show="!$store.open6" class="" >
                   Bundesdruckerei Pitch
                 </div>
@@ -215,7 +215,7 @@
                   <span>Bundesdruckerei Pitch</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open7: false}" @mouseleave="$store.open7 = false">
+              <div class="" x-data @mouseleave="$store.open7 = false">
                 <div @mouseover="$store.open7 = true" x-show="!$store.open7" class="" >
                   Sonho do Mato
                 </div>
@@ -248,7 +248,7 @@
                   <span>Sonho do Mato</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open8: false}" @mouseleave="$store.open8 = false">
+              <div class="" x-data @mouseleave="$store.open8 = false">
                 <div @mouseover="$store.open8 = true" x-show="!$store.open8" class="" >
                   Various Posters
                 </div>
@@ -281,7 +281,7 @@
                   <span>Various Posters</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open9: false}" @mouseleave="$store.open9 = false">
+              <div class="" x-data @mouseleave="$store.open9 = false">
                 <div @mouseover="$store.open9 = true" x-show="!$store.open9" class="" >
                   Camera Work
                 </div>
@@ -314,7 +314,7 @@
                   <span>Camera Work</span>
                 </button>
               </div>  
-              <div class="" x-data="{ $store.open10: false}" @mouseleave="$store.open10 = false">
+              <div class="" x-data @mouseleave="$store.open10 = false">
                 <div @mouseover="$store.open10 = true" x-show="!$store.open10" class="" >
                   Motion Showreel
                 </div>
@@ -453,16 +453,16 @@
     </div>
     <script>
       document.addEventListener('alpine:init', () => {
-        Alpine.store('open1', false)
-        Alpine.store('open2', false)
-        Alpine.store('open3', false)
-        Alpine.store('open4', false)
-        Alpine.store('open5', false)
-        Alpine.store('open6', false)
-        Alpine.store('open7', false)
-        Alpine.store('open8', false)
-        Alpine.store('open9', false)
-        Alpine.store('open10', false)
+        Alpine.store('open1', false);
+        Alpine.store('open2', false);
+        Alpine.store('open3', false);
+        Alpine.store('open4', false);
+        Alpine.store('open5', false);
+        Alpine.store('open6', false);
+        Alpine.store('open7', false);
+        Alpine.store('open8', false);
+        Alpine.store('open9', false);
+        Alpine.store('open10', false);
       })
     </script>
   </body>
