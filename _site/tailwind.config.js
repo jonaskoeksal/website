@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'cgray' : '#dacfc9'
+      },
+      cursor: {
+        default : 'url(./custom_cursor.svg), default',
+        pointer : 'url(./custom_cursor.svg), pointer',
       }
     },
   },
