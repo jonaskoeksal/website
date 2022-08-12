@@ -392,7 +392,7 @@
             </div>
             <!-- mobile -->
 
-            <div class="inset-0 absolute bg-white bg-opacity-100 min-h-full h-full w-full flex flex-col">
+            <div class="inset-0 absolute bg-white bg-opacity-100 min-h-full h-full w-full flex flex-col gallery">
     <!-- slide one (needs extra class "firstslide" as does last slide need "lastslide")-->
   <div class="flex flex-col slide firstslide">
       <div class="py-4 px-6 flex justify-between">
@@ -642,6 +642,21 @@
         previousSlide.classList.remove('hidden');
         previousSlide.classList.add('flex');
         }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $('.gallery').click(function (e){
+
+  var elm = $(this);
+  var xPos = e.pageX - elm.offset().left;
+
+  if((elm.width() / 2) >= xPos){
+    nextSlide();
+  } else {
+    previousSlide();
+  }
+
+});
 </script>
         </div>
       </div>    
