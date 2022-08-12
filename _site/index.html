@@ -4,7 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Home - </title>
-    <link rel="stylesheet" href="/wbstjnskksl/assets/css/main.css">
+    <!-- <link rel="stylesheet" href="/wbstjnskksl/assets/css/main.css"> -->
+    <link rel="stylesheet" href="/assets/css/main.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body>
@@ -365,24 +366,15 @@
             Jonas Koeksal
           </div>
           <div class="md:hidden h-16"></div>
-          <!-- Literaturhaus München (double, one for mobile one for desktop: different visibility and x-data/x-show); change content in both!-->
-<div class="md:h-full" x-data x-show="$store.open1">
-    <div class="px-6 py-8 flex flex-col">
-        <div class="grid grid-cols-2 h-20">
-            <div class="text-2xl flex flex-col justify-center">
-                Literaturhaus München
-            </div>
-            <div class="text-xs grid grid-cols-3 text-center">
-                <div class="flex flex-col justify-center">Art Direction</div>
-                <div class="flex flex-col justify-center">Branding</div>
-                <div class="flex flex-col justify-center">Camera</div>
-            </div>
-        </div>
-        <div class="w-auto">
-            <img class="object-cover w-full h-4/6" src="/wbstjnskksl/assets/images/0_Literaturhaus_München/2_65945.jpg" alt="">
-        </div>
+          <!-- First Menu point (double, one for mobile one for desktop: different visibility and x-data/x-show); change content in both! $store.open need to be numerated correctly (1,2...,10)-->
+<!-- desktop -->
+<div class="md:h-full md:w-full" x-data x-show="$store.open1">
+    <div class="w-full h-full">
+            <!-- src="/wbstjnskksl/assets/images/0_Literaturhaus_München/2_65945.jpg" alt=""> -->
+        <img class="object-cover w-full h-full" src="/assets/images/0_Literaturhaus_München/2_65945.jpg" alt="">
     </div>
 </div>
+<!-- mobile -->
 <button onclick="location.href='./literaturhaus.html'" type="button" class="md:hidden">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
@@ -396,26 +388,15 @@
             </div>
         </div>
         <div class="w-auto">
-            <img class="object-cover w-full h-4/6" src="/wbstjnskksl/assets/images/0_Literaturhaus_München/2_65945.jpg" alt="">
+            <img class="object-cover w-full h-4/6" src="/assets/images/0_Literaturhaus_München/2_65945.jpg" alt="">
         </div>
     </div>
 </button>
-<!-- O Mato (double, one for mobile one for desktop)-->
-<div class="md:h-full" x-data x-show="$store.open2">
-    <div class="px-6 py-8 flex flex-col">
-        <div class="grid grid-cols-2 h-20">
-            <div class="text-2xl flex flex-col justify-center">
-                O MATO
-            </div>
-            <div class="text-xs grid grid-cols-3 text-center">
-                <div class="flex flex-col justify-center">Art Direction</div>
-                <div class="flex flex-col justify-center">Branding</div>
-                <div class="flex flex-col justify-center">Camera</div>
-            </div>
-        </div>
-        <div class="w-auto">
-            <img class="object-cover w-full h-4/6" src="/wbstjnskksl/assets/images/1_O MATO/1.jpg" alt="">
-        </div>
+<!-- second menu point -->
+<div class="h-full w-full" x-data x-show="$store.open2">
+    <div class="h-full w-full">
+        <!-- src="/wbstjnskksl/assets/images/1_O MATO/1.jpg" alt=""> -->
+        <img class="object-cover w-full h-full" src="/assets/images/1_O MATO/1.jpg" alt="">
     </div>
 </div>
 <button onclick="location.href='./omato.html'" type="button" class="md:hidden">
@@ -431,33 +412,22 @@
             </div>
         </div>
         <div class="w-auto">
-            <img class="object-cover w-full h-4/6" src="/wbstjnskksl/assets/images/1_O MATO/1.jpg" alt="">
+            <img class="object-cover w-full h-4/6" src="/assets/images/1_O MATO/1.jpg" alt="">
         </div>
     </div>
 </button>
 <!-- Plotze -->
-<div class="md:h-full" x-data x-show="$store.open3">
-    <div class="px-6 py-8 flex flex-col">
-        <div class="grid grid-cols-2 h-20">
-            <div class="text-2xl flex flex-col justify-center">
-                Plötze
-            </div>
-            <div class="text-xs grid grid-cols-3 text-center">
-                <div class="flex flex-col justify-center">Art Direction</div>
-                <div class="flex flex-col justify-center">Branding</div>
-                <div class="flex flex-col justify-center">Camera</div>
-            </div>
-        </div>
-        <div class="w-auto">
-            <img class="object-cover w-full h-4/6" src="/wbstjnskksl/assets/images/2_Plötze/3_ID Card PSD Mockup_final.jpg" alt="">
-        </div>
+<div class="h-full w-full" x-data x-show="$store.open3">
+    <div class="h-full w-full">
+        <!--  src="/wbstjnskksl/assets -->
+        <img class="object-cover w-full h-full" src="/assets/images/2_Plötze/3_ID Card PSD Mockup_final.jpg" alt="">
     </div>
 </div>
-<button onclick="location.href='./ploetze.html'" type="button"  class="md:hidden">
+<button onclick="location.href='./omato.html'" type="button" class="md:hidden">
     <div class="px-6 py-8 flex flex-col">
         <div class="grid grid-cols-2 h-20">
             <div class="text-2xl flex flex-col justify-center">
-                Plötze
+                O MATO
             </div>
             <div class="text-xs grid grid-cols-3 text-center">
                 <div class="flex flex-col justify-center">Art Direction</div>
@@ -466,7 +436,7 @@
             </div>
         </div>
         <div class="w-auto">
-            <img class="object-cover w-full h-4/6" src="/wbstjnskksl/assets/images/2_Plötze/3_ID Card PSD Mockup_final.jpg" alt="">
+            <img class="object-cover w-full h-4/6" src="/assets/images/2_Plötze/3_ID Card PSD Mockup_final.jpg" alt="">
         </div>
     </div>
 </button>
