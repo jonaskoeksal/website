@@ -6,6 +6,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: local('PlusJakartaSans'), url(./assets/fonts/PlusJakartaSans-Regular.woff) format('woff');
+}
+
 *,
 *:before,
 *:after {
