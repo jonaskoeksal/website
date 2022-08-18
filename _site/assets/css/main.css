@@ -13743,7 +13743,7 @@ img, video { max-width: 100%; height: auto; }
 
 .ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
 
-@font-face { font-family: 'PlusJakartaSans'; src: local("PlusJakartaSans"), url(./assets/fonts/PlusJakartaSans-Regular.ttf) format("truetype"); src: local("PlusJakartaSans"), url(./assets/fonts/PlusJakartaSans-Regular.woff) format("woff"), local("PlusJakartaSans"), url(./assets/fonts/PlusJakartaSans-Regular.woff2) format("woff2"); }
+@font-face { font-family: 'PlusJakartaSans'; src: local("PlusJakartaSans"), url(./assets/fonts/PlusJakartaSans-Regular.ttf) format("truetype"), local("PlusJakartaSans"), url(./assets/fonts/PlusJakartaSans-Regular.woff) format("woff"), local("PlusJakartaSans"), url(./assets/fonts/PlusJakartaSans-Regular.woff2) format("woff2"); }
 
 *, *:before, *:after { cursor: url(./custom_cursor.svg), default; }
 
