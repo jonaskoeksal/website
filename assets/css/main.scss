@@ -8,9 +8,9 @@
 
 @font-face {
   font-family: 'PlusJakartaSans';
-  src: local('PlusJakartaSans'), url(./assets/fonts/PlusJakartaSans-Regular.ttf) format('truetype'),
-      local('PlusJakartaSans'), url(./assets/fonts/PlusJakartaSans-Regular.woff) format('woff'),
-      local('PlusJakartaSans'), url(./assets/fonts/PlusJakartaSans-Regular.woff2) format('woff2'),
+  src: local('PlusJakartaSans'), url("./assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  src: local('PlusJakartaSans'), url("./assets/fonts/PlusJakartaSans-Regular.woff") format("woff"),
+      local('PlusJakartaSans'), url("./assets/fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
 }
 
 *,
