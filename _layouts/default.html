@@ -6,34 +6,39 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <!-- <link rel="stylesheet" href="{{site.baseurl}}/wbstjnskksl/assets/css/main.css"> -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="swp.js"> </script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
   </head>
   <body class="text-left">
-    <div class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
+    <div id="swup" class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
       <div class="hidden md:grid w-full grid-cols-3 h-24 md:divide-x-2 divide-black divide-solid">
-          <a href="./index.html" class="text-4xl pt-6 pl-8">Jonas Koeksal</a>
-          <div class="text-2xl col-span-2 text-center flex justify-center items-center">{{ page.title }}</div>
+          <a href="/index.html" class="text-4xl pt-6 pl-8">Jonas Koeksal</a>
+          <div class="text-2xl col-span-2 text-center flex justify-center items-center">
+            <div class="transition-fade">
+              {{ page.title }}
+            </div>
+          </div>
       </div>
       <div class="flex-1 flex flex-col md:grid md:grid-cols-3 md:divide-x-2 divide-black divide-solid overflow-y-auto">
           <div class="hidden md:flex flex-col md:divide-y-2 divide-black divide-solid">
             <div class="text-2xl lg:text-3xl bg-cgray flex-grow pl-8 pt-10 space-y-2 text-left">
               <!-- menu items -->
-              {% include desktop_menu_item.html title="Literaturhaus München" url="./literaturhaus.html" show_var="$store.open1" %}
-              {% include desktop_menu_item.html title="Plötze" url="./ploetze.html" show_var="$store.open2" %}
-              {% include desktop_menu_item.html title="Various Posters" url="./variousposters.html" show_var="$store.open3" %}
-              {% include desktop_menu_item.html title="O MATO" url="./omato.html" show_var="$store.open4" %}
-              {% include desktop_menu_item.html title="United We Stream" url="./unitedwestream.html" show_var="$store.open5" %}
-              {% include desktop_menu_item.html title="Bundesdruckerei Pitch" url="./bundesdruckereipitch.html" show_var="$store.open6" %}
-              {% include desktop_menu_item.html title="Sonho do Mato" url="./sonhodomato.html" show_var="$store.open7" %}
-              {% include desktop_menu_item.html title="Island Jazz" url="./islandjazz.html" show_var="$store.open8" %}
-              {% include desktop_menu_item.html title="Camera Work" url="./camerawork.html" show_var="$store.open9" %}
-              {% include desktop_menu_item.html title="Motion Showreel" url="./motionshowreel.html" show_var="$store.open10" %}
+              {% include desktop_menu_item.html title="Literaturhaus München" url="/literaturhaus.html" show_var="$store.open1" %}
+              {% include desktop_menu_item.html title="Plötze" url="/ploetze.html" show_var="$store.open2" %}
+              {% include desktop_menu_item.html title="Various Posters" url="/variousposters.html" show_var="$store.open3" %}
+              {% include desktop_menu_item.html title="O MATO" url="/omato.html" show_var="$store.open4" %}
+              {% include desktop_menu_item.html title="United We Stream" url="/unitedwestream.html" show_var="$store.open5" %}
+              {% include desktop_menu_item.html title="Bundesdruckerei Pitch" url="/bundesdruckereipitch.html" show_var="$store.open6" %}
+              {% include desktop_menu_item.html title="Sonho do Mato" url="/sonhodomato.html" show_var="$store.open7" %}
+              {% include desktop_menu_item.html title="Island Jazz" url="/islandjazz.html" show_var="$store.open8" %}
+              {% include desktop_menu_item.html title="Camera Work" url="/camerawork.html" show_var="$store.open9" %}
+              {% include desktop_menu_item.html title="Motion Showreel" url="/motionshowreel.html" show_var="$store.open10" %}
               <!-- -->
             </div>
             <div class="flex text-xl justify-evenly">
                 <div class="p-2">
-                  <a href="./impressum.html" class="">Impressum</a>
+                  <a href="/impressum.html" class="">Impressum</a>
                 </div>
                 <div class="p-2">
                   <a href="mailto:jonas@o-mato.com" class="">Contact</a>
@@ -57,8 +62,10 @@
             {% include desktop_hover_preview.html show_var="$store.open9" img="9_Camera_Work/1/14424879_1238058206236161_3663829198413934534_o.jpg" img_alt="" %}
             {% include desktop_hover_preview.html show_var="$store.open10" img="" img_alt="" %}
             <!-- -->
-
-            {{ content }}
+            <div class="transition-fade">
+              {{ content }}
+            </div>
+            
         </div>
       </div>    
     </div>

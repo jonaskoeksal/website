@@ -6,13 +6,19 @@
     <title>Plötze - </title>
     <!-- <link rel="stylesheet" href="/wbstjnskksl/assets/css/main.css"> -->
     <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <script defer src="swp.js"> </script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </head>
   <body class="text-left">
-    <div class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
+    <div id="swup" class="w-full h-screen flex flex-col md:divide-y-2 divide-black divide-solid">
       <div class="hidden md:grid w-full grid-cols-3 h-24 md:divide-x-2 divide-black divide-solid">
-          <a href="./index.html" class="text-4xl pt-6 pl-8">Jonas Koeksal</a>
-          <div class="text-2xl col-span-2 text-center flex justify-center items-center">Plötze</div>
+          <a href="/index.html" class="text-4xl pt-6 pl-8">Jonas Koeksal</a>
+          <div class="text-2xl col-span-2 text-center flex justify-center items-center">
+            <div class="transition-fade">
+              Plötze
+            </div>
+          </div>
       </div>
       <div class="flex-1 flex flex-col md:grid md:grid-cols-3 md:divide-x-2 divide-black divide-solid overflow-y-auto">
           <div class="hidden md:flex flex-col md:divide-y-2 divide-black divide-solid">
@@ -22,7 +28,7 @@
     <div @mouseover="$store.open1=true; $store.gen=true" x-show="!$store.open1" class="" >
       Literaturhaus München
     </div>
-    <button onclick="location.href='./literaturhaus.html'" type="button" x-show="$store.open1" class="flex items-center text-white">
+    <a href="/literaturhaus.html" x-show="$store.open1" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -49,13 +55,13 @@
         </g>
       </svg>
       <span class="italic text-left">Literaturhaus München</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open2=false; $store.gen=false">
     <div @mouseover="$store.open2=true; $store.gen=true" x-show="!$store.open2" class="" >
       Plötze
     </div>
-    <button onclick="location.href='./ploetze.html'" type="button" x-show="$store.open2" class="flex items-center text-white">
+    <a href="/ploetze.html" x-show="$store.open2" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -82,13 +88,13 @@
         </g>
       </svg>
       <span class="italic text-left">Plötze</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open3=false; $store.gen=false">
     <div @mouseover="$store.open3=true; $store.gen=true" x-show="!$store.open3" class="" >
       Various Posters
     </div>
-    <button onclick="location.href='./variousposters.html'" type="button" x-show="$store.open3" class="flex items-center text-white">
+    <a href="/variousposters.html" x-show="$store.open3" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -115,13 +121,13 @@
         </g>
       </svg>
       <span class="italic text-left">Various Posters</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open4=false; $store.gen=false">
     <div @mouseover="$store.open4=true; $store.gen=true" x-show="!$store.open4" class="" >
       O MATO
     </div>
-    <button onclick="location.href='./omato.html'" type="button" x-show="$store.open4" class="flex items-center text-white">
+    <a href="/omato.html" x-show="$store.open4" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -148,13 +154,13 @@
         </g>
       </svg>
       <span class="italic text-left">O MATO</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open5=false; $store.gen=false">
     <div @mouseover="$store.open5=true; $store.gen=true" x-show="!$store.open5" class="" >
       United We Stream
     </div>
-    <button onclick="location.href='./unitedwestream.html'" type="button" x-show="$store.open5" class="flex items-center text-white">
+    <a href="/unitedwestream.html" x-show="$store.open5" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -181,13 +187,13 @@
         </g>
       </svg>
       <span class="italic text-left">United We Stream</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open6=false; $store.gen=false">
     <div @mouseover="$store.open6=true; $store.gen=true" x-show="!$store.open6" class="" >
       Bundesdruckerei Pitch
     </div>
-    <button onclick="location.href='./bundesdruckereipitch.html'" type="button" x-show="$store.open6" class="flex items-center text-white">
+    <a href="/bundesdruckereipitch.html" x-show="$store.open6" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -214,13 +220,13 @@
         </g>
       </svg>
       <span class="italic text-left">Bundesdruckerei Pitch</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open7=false; $store.gen=false">
     <div @mouseover="$store.open7=true; $store.gen=true" x-show="!$store.open7" class="" >
       Sonho do Mato
     </div>
-    <button onclick="location.href='./sonhodomato.html'" type="button" x-show="$store.open7" class="flex items-center text-white">
+    <a href="/sonhodomato.html" x-show="$store.open7" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -247,13 +253,13 @@
         </g>
       </svg>
       <span class="italic text-left">Sonho do Mato</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open8=false; $store.gen=false">
     <div @mouseover="$store.open8=true; $store.gen=true" x-show="!$store.open8" class="" >
       Island Jazz
     </div>
-    <button onclick="location.href='./islandjazz.html'" type="button" x-show="$store.open8" class="flex items-center text-white">
+    <a href="/islandjazz.html" x-show="$store.open8" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -280,13 +286,13 @@
         </g>
       </svg>
       <span class="italic text-left">Island Jazz</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open9=false; $store.gen=false">
     <div @mouseover="$store.open9=true; $store.gen=true" x-show="!$store.open9" class="" >
       Camera Work
     </div>
-    <button onclick="location.href='./camerawork.html'" type="button" x-show="$store.open9" class="flex items-center text-white">
+    <a href="/camerawork.html" x-show="$store.open9" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -313,13 +319,13 @@
         </g>
       </svg>
       <span class="italic text-left">Camera Work</span>
-    </button>
+    </a>
   </div>  
               <div class="" x-data @mouseleave="$store.open10=false; $store.gen=false">
     <div @mouseover="$store.open10=true; $store.gen=true" x-show="!$store.open10" class="" >
       Motion Showreel
     </div>
-    <button onclick="location.href='./motionshowreel.html'" type="button" x-show="$store.open10" class="flex items-center text-white">
+    <a href="/motionshowreel.html" x-show="$store.open10" class="flex items-center text-white">
       <svg class="h-8 px-2" version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
         <style type="text/css">
@@ -346,13 +352,13 @@
         </g>
       </svg>
       <span class="italic text-left">Motion Showreel</span>
-    </button>
+    </a>
   </div>  
               <!-- -->
             </div>
             <div class="flex text-xl justify-evenly">
                 <div class="p-2">
-                  <a href="./impressum.html" class="">Impressum</a>
+                  <a href="/impressum.html" class="">Impressum</a>
                 </div>
                 <div class="p-2">
                   <a href="mailto:jonas@o-mato.com" class="">Contact</a>
@@ -364,7 +370,7 @@
             Jonas Koeksal
           </div>
           <div class="md:hidden h-16"></div>
-            <!-- hover desktop previws-->
+            <!-- hover desktop previews-->
             <div class="md:h-full md:w-full" x-data x-show="$store.open1">
     <div class="w-full h-full">
         <img class="object-cover w-full h-full" src="/assets/images/1_Literaturhaus_Muenchen/1_65945.jpg" alt="">
@@ -426,8 +432,8 @@
 </div>
   
             <!-- -->
-
-            <button onclick="location.href='./index.html'" type="button" class="md:hidden absolute top-6 right-6" style="border-style:none">
+            <div class="transition-fade">
+              <button onclick="location.href='./index.html'" type="button" class="md:hidden absolute top-6 right-6" style="border-style:none">
     <svg class="h-6 w-6" style="border-top-width:none;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M810.65984 170.65984q18.3296 0 30.49472 12.16512t12.16512 30.49472q0 18.00192-12.32896 30.33088l-268.67712 268.32896 268.67712 268.32896q12.32896 12.32896 12.32896 30.33088 0 18.3296-12.16512 30.49472t-30.49472 12.16512q-18.00192 0-30.33088-12.32896l-268.32896-268.67712-268.32896 268.67712q-12.32896 12.32896-30.33088 12.32896-18.3296 0-30.49472-12.16512t-12.16512-30.49472q0-18.00192 12.32896-30.33088l268.67712-268.32896-268.67712-268.32896q-12.32896-12.32896-12.32896-30.33088 0-18.3296 12.16512-30.49472t30.49472-12.16512q18.00192 0 30.33088 12.32896l268.32896 268.67712 268.32896-268.67712q12.32896-12.32896 30.33088-12.32896z"  /></svg>
 </button>
 <div class="flex flex-col space-y-8" x-data x-show="!$store.gen">
@@ -480,6 +486,8 @@
     </div>
     <div class="h-0"></div>
 </div>
+            </div>
+            
         </div>
       </div>    
     </div>

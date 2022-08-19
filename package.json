@@ -14,5 +14,8 @@
     "postcss": "^8.4.16",
     "postcss-import": "^14.1.0",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "swup": "^2.0.18"
   }
 }

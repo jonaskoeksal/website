@@ -13819,6 +13819,10 @@ img, video { max-width: 100%; height: auto; }
 
 *, *:before, *:after { cursor: url(./custom_cursor.svg), default; }
 
+.transition-fade { opacity: 1; transition: 1s; }
+
+html.is-animating .transition-fade { opacity: 0; }
+
 @media (min-width: 640px) { .sm\:container { width: 100%; } }
 
 @media (min-width: 640px) and (min-width: 640px) { .sm\:container { max-width: 640px; } }
