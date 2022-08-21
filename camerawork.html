@@ -55,11 +55,14 @@ title: "Camera Work"
   var xPos = e.pageX - elm.offset().left;
 
   if((elm.width() / 2) >= xPos){
+    if(elm.tagname == 'A' ){
+        pass
+    }else{
     previousSlide();
     }
+  }
    else {
     if(elm.tagname == 'BUTTON' ){
-      console.log("button")
       pass
     }else{
     nextSlide();
