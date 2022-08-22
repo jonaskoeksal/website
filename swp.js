@@ -44,7 +44,8 @@ function previousSlide(){
 
 
 function init() {
-    if (document.querySelector('#carousel')) {
+    console.log(document.querySelector('#carousel'));
+    if (document.querySelector('.carousel')) {
         console.log("carousel");
         $('.content').click(function (e){
         console.log("clicked");
