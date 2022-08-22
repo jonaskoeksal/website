@@ -33,7 +33,7 @@ title: "Camera Work"
       };
     
     function nextSlide(){
-        stopVideo(body);
+        stopVideo();
         console.log("nextslide");
         let activeSlide = document.querySelector('.slide.flex');
         activeSlide.classList.add('hidden');
@@ -48,7 +48,7 @@ title: "Camera Work"
     }
 
     function previousSlide(){
-        stopVideo(body);
+        stopVideo();
         console.log("prevslide");
         let activeSlide = document.querySelector('.slide.flex');
         activeSlide.classList.add('hidden');
