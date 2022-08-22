@@ -21,6 +21,7 @@ title: "Camera Work"
 
 <script>
     function nextSlide(){
+        console.log("nextslide");
         let activeSlide = document.querySelector('.slide.flex');
         activeSlide.classList.add('hidden');
         activeSlide.classList.remove('flex');
@@ -34,6 +35,7 @@ title: "Camera Work"
     }
 
     function previousSlide(){
+        console.log("prevslide");
         let activeSlide = document.querySelector('.slide.flex');
         activeSlide.classList.add('hidden');
         activeSlide.classList.remove('flex');
@@ -50,7 +52,7 @@ title: "Camera Work"
 
 <script>
   $('.content').click(function (e){
-
+  console.log("clicked");
   var elm = $(this);
   var xPos = e.pageX - elm.offset().left;
 
