@@ -20,9 +20,9 @@ title: "Camera Work"
 
 
 <script>
-    function stopVideo(element) {
+    function stopVideo() {
          // getting every iframe from the body
-         var iframes = element.querySelectorAll('iframe');
+         var iframes = document.querySelectorAll('iframe');
          // reinitializing the values of the src attribute of every iframe to stop the YouTube video.
          for (let i = 0; i < iframes.length; i++) {
             if (iframes[i] !== null) {
