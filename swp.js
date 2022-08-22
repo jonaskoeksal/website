@@ -14,7 +14,6 @@ function stopVideo() {
 
 function nextSlide(){
     stopVideo();
-    console.log("nextslide");
     let activeSlide = document.querySelector('.slide.flex');
     activeSlide.classList.add('hidden');
     activeSlide.classList.remove('flex');
@@ -29,7 +28,6 @@ function nextSlide(){
 
 function previousSlide(){
     stopVideo();
-    console.log("prevslide");
     let activeSlide = document.querySelector('.slide.flex');
     activeSlide.classList.add('hidden');
     activeSlide.classList.remove('flex');
@@ -44,9 +42,7 @@ function previousSlide(){
 
 
 function init() {
-    console.log(document.querySelector('#carousel'));
     if (document.querySelector('.carousel')) {
-        console.log("carousel");
         $('.content').click(function (e){
         console.log("clicked");
         var elm = $(this);
