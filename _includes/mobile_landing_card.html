@@ -1,5 +1,5 @@
 <div class="w-full">
-    <a href="/wbstjnskksl{{ include.url }}" class="md:hidden">
+    <a href="{{ include.url }}" class="md:hidden">
         <div class="px-6 py-8 flex flex-col">
             <div class="grid grid-cols-2 h-20 text-left">
                 <div class="text-lg flex flex-col justify-center">
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="w-auto">
-                <img class="object-cover w-full h-4/6" src="{{site.baseurl}}/website/assets/images/{{ include.img }}" alt="{{ include.img_alt }}">
+                <img class="object-cover w-full h-4/6" src="{{site.baseurl}}/assets/images/{{ include.img }}" alt="{{ include.img_alt }}">
             </div>
         </div>
     </a>
