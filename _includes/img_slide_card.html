@@ -62,7 +62,11 @@
         </div>
     </div>
     <div class=" h-5/6 grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 md:space-x-4 p-12 items-center justify-center justify-items-center flex-initial content">
-            <img class="object-scale-down h-full" src="/assets/images/{{ include.img1 }}" alt="{{ include.img1_alt }}">
-            <img class="object-scale-down h-full" src="/assets/images/{{ include.img2 }}" alt="{{ include.img2_alt }}">
+            <div class="h-full">
+                <img class="object-scale-down h-full" src="/assets/images/{{ include.img1 }}" alt="{{ include.img1_alt }}">
+            </div>
+            <div class="h-full">
+                <img class="object-scale-down h-full" src="/assets/images/{{ include.img2 }}" alt="{{ include.img2_alt }}">
+            </div>
     </div>
 </div>
